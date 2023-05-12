@@ -1,17 +1,18 @@
-# @bajosoft/eslint-config
+# @utima/eslint-config
+Utima's extensible shared eslint-config.
 
-## Installation
+## Install
 ```
-npm i -D eslint @bajosoft/eslint-config
+npm i -D eslint @utima/eslint-config
 ```
 
 ## Usage
 Create `eslint.config.js` in the root of your directory with following contents:
 
 ```js
-import bajosoftConfig from '@bajosoft/eslint-config';
+import baseConfig from '@utima/eslint-config';
 
-export default [...bajosoftConfig];
+export default [...baseConfig];
 ```
 
 ### Running eslint

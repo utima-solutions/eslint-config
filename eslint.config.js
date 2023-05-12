@@ -1,3 +1,3 @@
-import bajosoftConfig from './index.js';
+import utimaConfig from './index.js';
 
-export default [...bajosoftConfig];
+export default [...utimaConfig];

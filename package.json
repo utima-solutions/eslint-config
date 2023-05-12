@@ -1,16 +1,23 @@
 {
-  "name": "@bajosoft/eslint-config",
+  "name": "@utima/eslint-config",
   "version": "0.1.0",
-  "description": "Bajosoft's ESLint config, implementing our styleguide.",
+  "description": "Utima's extensible shared eslint-config.",
   "type": "module",
   "main": "./index.js",
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
     "eslint": "^8.35.0"
+  },
+  "scripts": {
+    "release": "changeset publish",
+    "changeset": "changeset add",
+    "lint": "eslint './**/*.{js,ts,jsx,tsx,cjs,mjs}'"
   },
   "peerDependencies": {
     "eslint": ">=8"
   },
   "dependencies": {
+    "@changesets/cli": "^2.26.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint-config-prettier": "^8.6.0",
