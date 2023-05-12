@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "utima/eslint-config" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "utima-solutions/eslint-config" }],
   "commit": false,
   "fixed": [],
   "linked": [],
