@@ -9,7 +9,6 @@ export default [
       parserOptions: {
         ecmaFeatures: { modules: true },
         ecmaVersion: 'latest',
-        project: './tsconfig.json',
       },
     },
     plugins: {

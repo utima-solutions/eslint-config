@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.1.4
+
+### Patch Changes
+
+- Fixed broken release
+
 ## 0.1.3
 
 ### Patch Changes
