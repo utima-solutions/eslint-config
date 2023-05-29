@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.1.3
+
+### Patch Changes
+
+- [`aeb7f50`](https://github.com/utima-solutions/eslint-config/commit/aeb7f50f8e1dae0a3d9371dbbed8cbcfa07cd453) Thanks [@jsimck](https://github.com/jsimck)! - Fixed issue with multiple tsconfig files
+
 ## 0.1.2
 
 ### Patch Changes
