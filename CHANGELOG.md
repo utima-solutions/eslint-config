@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.2.1
+
+### Patch Changes
+
+- [`8ab8dea`](https://github.com/utima-solutions/eslint-config/commit/8ab8deac1d6d11cc19cb6aefe91c51a048f21e34) Thanks [@jsimck](https://github.com/jsimck)! - Fixed react config, updated typescript config
+
 ## 0.2.0
 
 ### Minor Changes
