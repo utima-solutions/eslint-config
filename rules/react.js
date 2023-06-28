@@ -1,26 +1,28 @@
-import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js';
-import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
+import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
   {
     files: ['**/*.jsx', '**/*.tsx'],
-    ...reactRecommended,
-    ...reactJsxRuntime,
     plugins: {
+      react: reactPlugin,
       'react-hooks': hooksPlugin,
     },
     rules: {
+      ...reactPlugin.configs.recommended.rules,
+      ...reactPlugin.configs['jsx-runtime'].rules,
       ...hooksPlugin.configs.recommended.rules,
-      'react/boolean-prop-naming': [
-        'error',
-        {
-          message:
-            'Invalid boolean prop name, use one of (is|has|show|hide) prefixes.',
-          propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
-          rule: '^(is|has|show|hide)[A-Z]([A-Za-z0-9]?)+',
-        },
-      ],
+      'react/boolean-prop-naming': 'off',
+      // 'react/boolean-prop-naming': [
+      //   'error',
+      //   {
+      //     message:
+      //       'Invalid boolean prop name, use one of (is|has|show|hide) prefixes.',
+      //     propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
+      //     rule: '^(is|has|show|hide)[A-Z]([A-Za-z0-9]?)+',
+      //   },
+      // ],
+      'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
       'react/default-props-match-prop-types': [
         'error',
         { allowRequiredDefaults: true },
@@ -47,7 +49,7 @@ export default [
       'react/no-this-in-sfc': 'error',
       'react/no-typos': 'error',
       'react/no-unsafe': 'error',
-      'react/no-unstable-nested-components': 'error',
+      'react/no-unstable-nested-components': ['warn', { allowAsProps: true }],
       'react/no-unused-class-component-methods': 'warn',
       'react/no-unused-prop-types': [
         'error',
@@ -139,7 +141,6 @@ export default [
       'react/jsx-newline': ['error', { prevent: true }],
       'react/jsx-no-constructed-context-values': 'error',
       'react/jsx-no-script-url': 'error',
-      'react/jsx-no-useless-fragment': 'error',
       'react/jsx-one-expression-per-line': [
         'error',
         {

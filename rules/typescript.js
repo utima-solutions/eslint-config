@@ -22,6 +22,16 @@ export default [
         'error',
         { 'ts-expect-error': 'off' },
       ],
+      '@typescript-eslint/ban-types': [
+        'error',
+        {
+          types: {
+            Function: false,
+            '{}': false,
+          },
+          extendDefaults: true,
+        },
+      ],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
