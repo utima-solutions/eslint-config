@@ -1,12 +1,17 @@
 import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js';
 import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
+import hooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
   {
     files: ['**/*.jsx', '**/*.tsx'],
     ...reactRecommended,
     ...reactJsxRuntime,
+    plugins: {
+      'react-hooks': hooksPlugin,
+    },
     rules: {
+      ...hooksPlugin.configs.recommended.rules,
       'react/boolean-prop-naming': [
         'error',
         {
