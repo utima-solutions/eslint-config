@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- [`8a0c384`](https://github.com/utima-solutions/eslint-config/commit/8a0c384c837092bb73d1d87fbcc280d4efaa621e) Thanks [@jsimck](https://github.com/jsimck)! - Added react-hooks eslint plugin
+
 ## 0.1.4
 
 ### Patch Changes
