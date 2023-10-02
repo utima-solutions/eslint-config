@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.4.1
+
+### Patch Changes
+
+- [`6d2261a`](https://github.com/utima-solutions/eslint-config/commit/6d2261a7080b7ba1acfe9c6ac0701e824ae2f2dd) Thanks [@jsimck](https://github.com/jsimck)! - Updated README.md
+
 ## 0.4.0
 
 ### Minor Changes
