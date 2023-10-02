@@ -43,6 +43,7 @@ export default [
           varsIgnorePattern: '^_',
           destructuredArrayIgnorePattern: '^_',
           ignoreRestSiblings: true,
+          args: 'none',
         },
       ],
     },

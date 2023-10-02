@@ -2,6 +2,16 @@ import importPlugin from 'eslint-plugin-import';
 
 export default [
   {
+    files: [
+      '**/*.js',
+      '**/*.jsx',
+      '**/*.mjs',
+      '**/*.cjs',
+      '**/*.ts',
+      '**/*.tsx',
+      '**/*.mts',
+      '**/*.cts',
+    ],
     plugins: { import: importPlugin },
     settings: {
       'import/parsers': {

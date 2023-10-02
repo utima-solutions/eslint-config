@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- Added eslint-plugin-unused-imports
+
 ## 0.3.0
 
 ### Minor Changes

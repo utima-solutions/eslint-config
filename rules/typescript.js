@@ -20,7 +20,7 @@ export default [
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/ban-ts-comment': [
         'error',
-        { 'ts-expect-error': 'off' },
+        { 'ts-expect-error': 'allow-with-description' },
       ],
       '@typescript-eslint/ban-types': [
         'error',
