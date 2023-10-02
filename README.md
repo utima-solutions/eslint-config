@@ -26,6 +26,7 @@ Below is simple code snippet you can add to your package.json to run eslint:
 }
 ```
 
+
 ## FAQ
 
 **Q: Does this work with VSCode eslint plugin?**
@@ -39,4 +40,16 @@ Below is simple code snippet you can add to your package.json to run eslint:
     "overrideConfigFile": "eslint.config.mjs"
   },
 }
+```
+
+## Contribution guide
+
+Every PR implementing new feature should include [changeset](https://github.com/changesets/changesets). Use `npm run changeset` from the root of the repository to generate new changeset and include it with your PR.
+
+### Release
+
+Make sure all new features are merged to `main` and you are on `main` branch including their changesets. and run:
+
+```bash
+npm run release
 ```

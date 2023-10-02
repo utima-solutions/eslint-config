@@ -5,8 +5,9 @@
   "type": "module",
   "main": "./index.js",
   "scripts": {
-    "version": "changeset version",
-    "release": "changeset publish",
+    "release:prepare": "changeset version && npm i --package-lock-only --ignore-scripts",
+    "release:push": "git add . && git commit -m 'Publish' && changeset tag && git push --follow-tags",
+    "release": "npm run release:prepare && npm run release:push && changeset publish",
     "changeset": "changeset add",
     "lint": "eslint './**/*.{js,ts,jsx,tsx,cjs,mjs}'"
   },
