@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.3.0
+
+### Minor Changes
+
+- [`1924ae9`](https://github.com/utima-solutions/eslint-config/commit/1924ae9a2744e799923fbed5eed1f52c96c85373) Thanks [@jsimck](https://github.com/jsimck)! - Prettier V3, updated dependencies, added .next to ignorefiles
+
 ## 0.2.1
 
 ### Patch Changes
