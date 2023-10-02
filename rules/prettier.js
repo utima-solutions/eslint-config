@@ -19,7 +19,7 @@ export default [
         {
           singleQuote: true,
           semi: true,
-          trailingComma: 'es5',
+          trailingComma: 'all',
           jsxSingleQuote: true,
           bracketSameLine: false,
           arrowParens: 'avoid',
