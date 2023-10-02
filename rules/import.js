@@ -1,17 +1,10 @@
 import importPlugin from 'eslint-plugin-import';
 
+import { files } from '../src/helpers.js';
+
 export default [
   {
-    files: [
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.mjs',
-      '**/*.cjs',
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.mts',
-      '**/*.cts',
-    ],
+    files: [...files.js, ...files.ts],
     plugins: { import: importPlugin },
     settings: {
       'import/parsers': {

@@ -53,3 +53,17 @@ Make sure all new features are merged to `main` and you are on `main` branch inc
 ```bash
 npm run release
 ```
+
+#### RC Versions
+
+To enter RC mode, run:
+
+```bash
+npm run release:rc:exit
+```
+
+when in RC mode, all version releases will have `-rc` suffix. To exit RC mode, run:
+
+```bash
+npm run release:rc:exit
+```

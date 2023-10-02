@@ -1,9 +1,11 @@
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
 
+import { files } from '../src/helpers.js';
+
 export default [
   {
-    files: ['**/*.jsx', '**/*.tsx'],
+    files: files.jsx,
     plugins: {
       react: reactPlugin,
       'react-hooks': hooksPlugin,

@@ -1,17 +1,10 @@
 import unusedImportsPlugin from 'eslint-plugin-unused-imports';
 
+import { files } from '../src/helpers.js';
+
 export default [
   {
-    files: [
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.mjs',
-      '**/*.cjs',
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.mts',
-      '**/*.cts',
-    ],
+    files: [...files.js, ...files.ts],
     plugins: { 'unused-imports': unusedImportsPlugin },
     rules: {
       'no-unused-vars': 'off',
