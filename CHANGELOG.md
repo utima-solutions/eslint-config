@@ -1,5 +1,12 @@
 # @utima/eslint-config
 
+## 0.6.0
+
+### Minor Changes
+
+- [`0e65890`](https://github.com/utima-solutions/eslint-config/commit/0e658905457200f58001d4af2c04a811924d45d3) Thanks [@jsimck](https://github.com/jsimck)! - Added `jest` and `jest-formatting` plugins and rules
+  Fixed next config missing from default set of configs
+
 ## 0.5.0
 
 ### Minor Changes
