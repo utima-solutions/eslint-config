@@ -1,6 +1,6 @@
 {
   "name": "@utima/eslint-config",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Utima's extensible shared eslint-config.",
   "type": "module",
   "main": "./index.js",

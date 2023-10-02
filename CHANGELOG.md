@@ -1,5 +1,12 @@
 # @utima/eslint-config
 
+## 0.5.0
+
+### Minor Changes
+
+- [`0b5b7b8`](https://github.com/utima-solutions/eslint-config/commit/0b5b7b87c9ea210371df28465686be67edf9a985) Thanks [@jsimck](https://github.com/jsimck)! - Added @next/eslint-plugin-next configuration
+  Updated README.md with release guide
+
 ## 0.4.1
 
 ### Patch Changes
