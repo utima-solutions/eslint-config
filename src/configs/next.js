@@ -1,6 +1,6 @@
 import next from '@next/eslint-plugin-next';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {

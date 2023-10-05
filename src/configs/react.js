@@ -1,7 +1,7 @@
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {
@@ -129,8 +129,8 @@ export default [
         {
           eventHandlerPrefix: 'handle',
           eventHandlerPropPrefix: 'on',
-          checkLocalVariables: true,
-          checkInlineFunction: true,
+          checkLocalVariables: false,
+          checkInlineFunction: false,
         },
       ],
       'react/jsx-max-props-per-line': [

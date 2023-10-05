@@ -1,7 +1,7 @@
 import ts from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {

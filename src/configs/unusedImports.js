@@ -1,6 +1,6 @@
 import unusedImportsPlugin from 'eslint-plugin-unused-imports';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {

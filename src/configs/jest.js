@@ -2,7 +2,7 @@ import jest from 'eslint-plugin-jest';
 import jestFormatting from 'eslint-plugin-jest-formatting';
 import globals from 'globals';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {

@@ -1,6 +1,6 @@
 import importPlugin from 'eslint-plugin-import';
 
-import { files } from '../src/helpers.js';
+import { files } from '../utils/helpers.js';
 
 export default [
   {
@@ -16,7 +16,7 @@ export default [
       },
     },
     rules: {
-      ...importPlugin.configs['recommended'].rules,
+      ...importPlugin.configs.recommended.rules,
       'import/no-unresolved': [
         'warn',
         {
