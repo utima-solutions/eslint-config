@@ -1,5 +1,13 @@
 # @utima/eslint-config
 
+## 0.7.0
+
+### Minor Changes
+
+- [`b2f851e`](https://github.com/utima-solutions/eslint-config/commit/b2f851e8c4799bf2e526a688d332ce727c6abbc9) Thanks [@jsimck](https://github.com/jsimck)! - Added support for `eslint-plugin-tailwindcss` as an optional config. Import `import { tailwind } from '@utima/eslint-config/configs';` to use it.
+  Added ability to import configs separately using `exports` package.json field, so you can use only configs you need. Check README.md for more info.
+  Updated `react/jsx-handler-names` rule to be less strict.
+
 ## 0.6.0
 
 ### Minor Changes
