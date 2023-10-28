@@ -1,5 +1,12 @@
 # @utima/eslint-config
 
+## 0.8.0
+
+### Minor Changes
+
+- [`e31c224`](https://github.com/utima-solutions/eslint-config/commit/e31c224a9d2165cdaabcb5b36619eee93a8c9d1b) Thanks [@jsimck](https://github.com/jsimck)! - - `@typescript-eslint/no-explicit-any` now correctly reports as `warn` instead of `error`
+  - added additional styling rules
+
 ## 0.7.0
 
 ### Minor Changes
