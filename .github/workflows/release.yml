@@ -24,6 +24,7 @@ jobs:
       - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
+          registry-url: 'https://registry.npmjs.org'
           node-version: 20
           cache: 'npm'
 
@@ -32,6 +33,6 @@ jobs:
 
       - if: github.ref == 'refs/heads/main'
         name: Release
-        run:
-          echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_TOKEN }}" >> $HOME/.npmrc 2> /dev/null |
-          npm run release:publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm run release:publish
