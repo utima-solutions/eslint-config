@@ -33,5 +33,5 @@ jobs:
       - if: github.ref == 'refs/heads/main'
         name: Release
         run:
-          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null |
+          echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_TOKEN }}" >> $HOME/.npmrc 2> /dev/null |
           npm run release:publish
