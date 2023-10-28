@@ -17,6 +17,7 @@ export default [
     },
     rules: {
       ...importPlugin.configs.recommended.rules,
+      'import/newline-after-import': ['error', { considerComments: false }],
       'import/no-unresolved': [
         'warn',
         {
