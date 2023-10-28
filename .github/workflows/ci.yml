@@ -1,6 +1,9 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  workflow_call:
+  pull_request:
+    branches: [main, dev]
 
 jobs:
   ci:
@@ -10,10 +13,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 18
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
 
       - name: Install Dependencies

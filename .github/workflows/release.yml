@@ -1,13 +1,19 @@
 name: Release
 
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
   release:
     name: Release
     runs-on: ubuntu-latest
@@ -15,35 +21,17 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Setup Node.js 18
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run lint
-        run: npm run lint
-
-        # Create release PR
-      - if: github.ref != 'refs/heads/main'
-        name: Create Release Pull Request
-        uses: changesets/action@v1
-        with:
-          title: Release Version
-          commit: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-        # Publish to NPM
       - if: github.ref == 'refs/heads/main'
-        name: Publish to NPM
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: npm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        name: Release
+        run:
+          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null |
+          npm run release:publish
