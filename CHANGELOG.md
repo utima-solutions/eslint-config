@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.10.0
+
+### Minor Changes
+
+- [`a1c34bd`](https://github.com/utima-solutions/eslint-config/commit/a1c34bd375a2a38ff73271605b347f5a2f512896) Thanks [@jsimck](https://github.com/jsimck)! - Added eslint-plugin-unicorn
+
 ## 0.9.0
 
 ### Minor Changes
