@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.9.0
+
+### Minor Changes
+
+- [`31e37f5`](https://github.com/utima-solutions/eslint-config/commit/31e37f5ac82dbc96ab4f23837a10f2ee94507cb7) Thanks [@jsimck](https://github.com/jsimck)! - Added eslint-plugin-sonarjs to default config
+
 ## 0.8.3
 
 ### Patch Changes
