@@ -1,6 +1,6 @@
 {
   "name": "@utima/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Utima's extensible shared eslint-config. It contains opinionated rules for JavaScript and TypeScript projects including React, TailwindCSS, Next.JS, jest and more.",
   "type": "module",
   "main": "./index.js",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
-    "@utima/scripts": "^0.0.2",
+    "@utima/scripts": "^0.0.4",
     "eslint": "^8.56.0"
   },
   "peerDependencies": {
