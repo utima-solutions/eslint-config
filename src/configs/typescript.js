@@ -46,6 +46,8 @@ export default [
         },
       ],
       '@typescript-eslint/no-namespace': ['error', { allowDeclarations: true }],
+      // turn off eslint undef
+      'no-undef': 'off',
     },
   },
 ];

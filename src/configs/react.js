@@ -8,12 +8,10 @@ export default [
     files: files.jsx,
     plugins: {
       react: reactPlugin,
-      'react-hooks': hooksPlugin,
     },
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...reactPlugin.configs['jsx-runtime'].rules,
-      ...hooksPlugin.configs.recommended.rules,
       'react/boolean-prop-naming': 'off',
       // 'react/boolean-prop-naming': [
       //   'error',
@@ -169,6 +167,16 @@ export default [
           return: 'parens-new-line',
         },
       ],
+    },
+  },
+  {
+    // Hooks are usually defined in non-jsx extension files
+    files: [...files.ts, ...files.js],
+    plugins: {
+      'react-hooks': hooksPlugin,
+    },
+    rules: {
+      ...hooksPlugin.configs.recommended.rules,
     },
   },
 ];

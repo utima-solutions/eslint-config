@@ -6,6 +6,7 @@ export const files = {
   js: ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'],
   jsx: ['**/*.tsx', '**/*.jsx'],
   test: [
+    '**/out/**',
     '**/*.test.*',
     '**/*_test.*',
     '**/*Test.*',
