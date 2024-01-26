@@ -11,6 +11,7 @@ export default [
       parserOptions: {
         ecmaFeatures: { modules: true },
         ecmaVersion: 'latest',
+        project: ['./tsconfig.json', './packages/*/tsconfig.json'],
       },
     },
     plugins: {
@@ -19,6 +20,8 @@ export default [
     rules: {
       ...ts.configs['eslint-recommended'].rules,
       ...ts.configs['recommended'].rules,
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-exports': 'error',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/ban-ts-comment': [
