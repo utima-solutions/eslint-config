@@ -1,5 +1,13 @@
 # @utima/eslint-config
 
+## 0.10.4
+
+### Patch Changes
+
+- [`7374b4f`](https://github.com/utima-solutions/eslint-config/commit/7374b4f849b6bc142530d9912bf3d83605beeee3) Thanks [@jsimck](https://github.com/jsimck)! - Added additional ignores
+
+- [`fd0fe08`](https://github.com/utima-solutions/eslint-config/commit/fd0fe08a8b768a3404bfe4def90a92844b55549b) Thanks [@jsimck](https://github.com/jsimck)! - Added compatibility with verbatimModuleSyntax"
+
 ## 0.10.3
 
 ### Patch Changes
