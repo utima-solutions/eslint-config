@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.10.1
+
+### Patch Changes
+
+- [`8e04b8b`](https://github.com/utima-solutions/eslint-config/commit/8e04b8bdaa14ba33efbec90e1231c5bff179b7ae) Thanks [@jsimck](https://github.com/jsimck)! - Enforce consistent import type in TS imports
+
 ## 0.10.0
 
 ### Minor Changes
