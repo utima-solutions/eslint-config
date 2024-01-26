@@ -5,6 +5,7 @@ export default [
   {
     ignores: [
       '**/out/**',
+      '**/*.gen.ts',
       '**/node_modules/**',
       '**/.next/**',
       '**/.expo/**',
