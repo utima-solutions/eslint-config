@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.10.3
+
+### Patch Changes
+
+- [`00cf30b`](https://github.com/utima-solutions/eslint-config/commit/00cf30bc89df747d9a2787f513cdd5e14d64a0c2) Thanks [@jsimck](https://github.com/jsimck)! - Fixed local linting
+
 ## 0.10.2
 
 ### Patch Changes
