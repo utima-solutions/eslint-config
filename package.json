@@ -16,7 +16,7 @@
   "scripts": {
     "lint": "eslint './**/*.{js,ts,jsx,tsx,cjs,mjs}'",
     "changeset": "changeset add",
-    "release": "utima release -p -d=''"
+    "release": "utima release -p -d ''"
   },
   "dependencies": {
     "@changesets/cli": "^2.27.1",
