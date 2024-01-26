@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.10.2
+
+### Patch Changes
+
+- [`1dd8880`](https://github.com/utima-solutions/eslint-config/commit/1dd88809ae5dbef2968697f094fdf8b27b0c0da1) Thanks [@jsimck](https://github.com/jsimck)! - Updated dependencies
+
 ## 0.10.1
 
 ### Patch Changes
