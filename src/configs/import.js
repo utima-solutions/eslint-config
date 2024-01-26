@@ -17,7 +17,7 @@ export default [
     },
     rules: {
       ...importPlugin.configs.recommended.rules,
-      'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+      'import/no-duplicates': ['error', { 'prefer-inline': true }],
       'import/newline-after-import': ['error', { considerComments: false }],
       'import/no-unresolved': [
         'warn',
