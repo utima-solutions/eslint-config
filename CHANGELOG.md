@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.11.2
+
+### Patch Changes
+
+- [`8f564ed`](https://github.com/utima-solutions/eslint-config/commit/8f564ed6c90a70dbee8090107d754dec419fa581) Thanks [@jsimck](https://github.com/jsimck)! - Removed @typescript-eslint/prefer-nullish-coalescing rule as it is too strict
+
 ## 0.11.1
 
 ### Patch Changes
