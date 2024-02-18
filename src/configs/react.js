@@ -9,6 +9,11 @@ export default [
     plugins: {
       react: reactPlugin,
     },
+    settings: {
+      react: {
+        version: 18
+      },
+    },
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...reactPlugin.configs['jsx-runtime'].rules,

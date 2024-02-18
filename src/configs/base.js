@@ -34,11 +34,13 @@ export default [
     rules: {
       ...js.configs.recommended.rules,
       'no-console': [
-        'error',
+        'warn',
         {
           allow: ['warn', 'error'],
         },
       ],
+      curly: ['error', 'all'],
+      'dot-notation': ['error'],
       'no-unused-vars': [
         'error',
         {

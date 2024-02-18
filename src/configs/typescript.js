@@ -1,5 +1,4 @@
-import ts from '@typescript-eslint/eslint-plugin';
-import typescriptParser from '@typescript-eslint/parser';
+import tsEslint from 'typescript-eslint';
 
 import { files } from '../utils/helpers.js';
 
@@ -7,10 +6,8 @@ export default [
   {
     files: files.ts,
     languageOptions: {
-      parser: typescriptParser,
+      parser: tsEslint.parser,
       parserOptions: {
-        ecmaFeatures: { modules: true },
-        ecmaVersion: 'latest',
         project: [
           './tsconfig.json',
           './apps/*/tsconfig.json',
@@ -19,11 +16,25 @@ export default [
       },
     },
     plugins: {
-      '@typescript-eslint': ts,
+      '@typescript-eslint': tsEslint.plugin,
     },
     rules: {
-      ...ts.configs['eslint-recommended'].rules,
-      ...ts.configs['recommended'].rules,
+      ...tsEslint.configs.eslintRecommended.rules,
+      ...tsEslint.configs.recommended.rules,
+      ...tsEslint.configs.stylistic.rules,
+      '@typescript-eslint/consistent-type-definitions': 'off',
+      '@typescript-eslint/prefer-nullish-coalescing': 'error',
+      '@typescript-eslint/prefer-optional-chain': 'error',
+      '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+      'default-param-last': 'off',
+      '@typescript-eslint/default-param-last': 'error',
+      '@typescript-eslint/method-signature-style': ['error', 'property'],
+      'dot-notation': 'off',
+      '@typescript-eslint/no-require-imports': 'error',
+      '@typescript-eslint/no-unsafe-unary-minus': 'error',
+      '@typescript-eslint/no-useless-empty-export': 'error',
+      '@typescript-eslint/dot-notation': 'error',
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       '@typescript-eslint/no-import-type-side-effects': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/consistent-type-exports': 'error',
