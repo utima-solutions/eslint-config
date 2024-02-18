@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.11.1
+
+### Patch Changes
+
+- [`1128a66`](https://github.com/utima-solutions/eslint-config/commit/1128a666ff78799952ffe1525bbda13cccfc28cb) Thanks [@jsimck](https://github.com/jsimck)! - Fixed invalid react version def
+
 ## 0.11.0
 
 ### Minor Changes
