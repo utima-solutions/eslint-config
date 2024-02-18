@@ -22,7 +22,7 @@ export default [
       ...tsEslint.configs.eslintRecommended.rules,
       ...tsEslint.configs.recommended.rules,
       ...tsEslint.configs.stylistic.rules,
-      '@typescript-eslint/prefer-nullish-coalescing': 'error',
+      '@typescript-eslint/prefer-nullish-coalescing': 'off',
       '@typescript-eslint/prefer-optional-chain': 'error',
       '@typescript-eslint/prefer-string-starts-ends-with': 'error',
       'default-param-last': 'off',
