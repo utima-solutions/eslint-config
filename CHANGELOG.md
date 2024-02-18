@@ -1,5 +1,12 @@
 # @utima/eslint-config
 
+## 0.11.0
+
+### Minor Changes
+
+- [`21e1b53`](https://github.com/utima-solutions/eslint-config/commit/21e1b5337607d66637b3582e29c1a0eaffd5b217) Thanks [@jsimck](https://github.com/jsimck)! - Updated dependencies to latest
+  Enabled more strict typescript rules
+
 ## 0.10.4
 
 ### Patch Changes
