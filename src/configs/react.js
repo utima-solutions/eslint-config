@@ -1,5 +1,7 @@
+import jsxAlly from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 
 import { files } from '../utils/helpers.js';
 
@@ -8,6 +10,8 @@ export default [
     files: files.jsx,
     plugins: {
       react: reactPlugin,
+      'jsx-a11y': jsxAlly,
+      'react-refresh': reactRefresh,
     },
     settings: {
       react: {
@@ -17,6 +21,7 @@ export default [
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...reactPlugin.configs['jsx-runtime'].rules,
+      'react-refresh/only-export-components': 'warn',
       'react/boolean-prop-naming': 'off',
       // 'react/boolean-prop-naming': [
       //   'error',
