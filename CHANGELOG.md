@@ -1,5 +1,13 @@
 # @utima/eslint-config
 
+## 0.12.0
+
+### Minor Changes
+
+- [`1441229`](https://github.com/utima-solutions/eslint-config/commit/144122900eb3a0812af26cd02fc5a33cabde2928) Thanks [@jsimck](https://github.com/jsimck)! - Added `eslint-plugin-jsx-a11y` plugin
+  Added `eslint-plugin-react-refresh` plugin
+  Updated dependencies
+
 ## 0.11.2
 
 ### Patch Changes
