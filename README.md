@@ -43,17 +43,20 @@ export default [...baseConfig, ...tailwind];
 
 Check following table for all aviailable configs:
 
-| Config name   | Description                                                                                           | Included in default config |
-|---------------|-------------------------------------------------------------------------------------------------------|----------------------------|
-| base          | Base config, includes language settings, globals and eslint.recommended config with some custom rules | ✅                          |
-| imprt         | `eslint-plugin-import`                                                                                | ✅                          |
-| unusedImports | `eslint-plugin-unused-imports`                                                                        | ✅                          |
-| jest          | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ✅                          |
-| prettier      | `plugin:prettier/recommended`                                                                         | ✅                          |
-| react         | `eslint-plugin-react`, `eslint-plugin-react-hooks`                                                    | ✅                          |
-| typescript    | `@typescript-eslint/eslint-plugin`                                                                    | ✅                          |
-| tailwind      | `eslint-plugin-tailwindcss`                                                                           | ❌                          |
-| next          | `@next/eslint-plugin-next`                                                                            | ❌                          |
+| Config name             | Description                                                                                           | Included in default config |
+|-------------------------|-------------------------------------------------------------------------------------------------------|----------------------------|
+| `base`                    | Base config, includes language settings, globals, parser options                                      | ✅                          |
+| `javascript`              | Extends eslint recommended settings with some custom overrides                                        | ✅                          |
+| `imprt`                   | `eslint-plugin-import`                                                                                | ✅                          |
+| `unusedImports`           | `eslint-plugin-unused-imports`                                                                        | ✅                          |
+| `unicorn`                 | `eslint-plugin-unicorn`                                                                        | ✅                          |
+| `jest`                    | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ✅                          |
+| `prettier`                | `plugin:prettier/recommended`                                                                         | ✅                          |
+| `react`                   | `eslint-plugin-react`, `eslint-plugin-react-hooks`                                                    | ✅                          |
+| `typescript`              | `@typescript-eslint/eslint-plugin`                                                                    | ✅                          |
+| `tailwind`                | `eslint-plugin-tailwindcss`                                                                           | ❌                          |
+| `typescriptTypeChecked`   | Enables type-checking and type-checked rules (**impacts performance**)                                | ❌                          |
+| `next`                    | `@next/eslint-plugin-next`                                                                            | ❌                          |
 
 ## FAQ
 

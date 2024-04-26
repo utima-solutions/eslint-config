@@ -5,9 +5,9 @@ import { files } from '../utils/helpers.js';
 export default [
   {
     files: [...files.ts, ...files.js],
-    plugins: { unicorn },
+    ...unicorn.configs['flat/recommended'],
     rules: {
-      ...unicorn.configs.recommended.rules,
+      ...unicorn.configs['flat/recommended'].rules,
       'unicorn/filename-case': [
         'error',
         {
