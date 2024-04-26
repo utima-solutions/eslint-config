@@ -9,7 +9,7 @@ export default [
     rules: {
       ...unicorn.configs['flat/recommended'].rules,
       'unicorn/filename-case': [
-        'error',
+        'warn',
         {
           cases: {
             camelCase: true,
@@ -44,9 +44,16 @@ export default [
       'unicorn/prefer-logical-operator-over-ternary': 'warn',
       'unicorn/consistent-destructuring': 'warn',
       'unicorn/no-unreadable-iife': 'warn',
+      'unicorn/prefer-event-target': 'warn',
+      'unicorn/prefer-query-selector': 'off',
+      'unicorn/prefer-string-slice': 'off',
+      'unicorn/no-useless-undefined': ['error', { checkArguments: false }],
 
       // Style rules turned off due to prettier
       'unicorn/empty-brace-spaces': 'off',
+
+      // This causes issues with some frameworks but is really rare to use
+      'unicorn/no-array-method-this-argument': 'off',
     },
   },
   {
