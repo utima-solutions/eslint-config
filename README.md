@@ -7,8 +7,10 @@ Base config includes configurations for multiple frameworks (JS, TS, React, jest
 
 ## Install
 ```
-npm i -D eslint @utima/eslint-config
+npm i -D eslint@8 @utima/eslint-config
 ```
+
+> *We are currently stuck on eslint v8 until all of the config dependencies are compatible with new v9*
 
 ## Usage
 Create `eslint.config.mjs` in the root of your directory with following contents:
