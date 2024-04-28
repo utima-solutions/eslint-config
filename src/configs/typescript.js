@@ -8,11 +8,11 @@ export default [
     languageOptions: {
       parser: tsEslint.parser,
       parserOptions: {
-        project: [
-          './tsconfig.json',
-          './apps/*/tsconfig.json',
-          './packages/*/tsconfig.json',
-        ],
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        allowAutomaticSingleRunInference: true,
+        jsDocParsingMode: 'none',
+        jsxPragma: null,
       },
     },
     plugins: {
@@ -23,20 +23,15 @@ export default [
       ...tsEslint.configs.recommended.rules,
       ...tsEslint.configs.stylistic.rules,
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
-      '@typescript-eslint/prefer-optional-chain': 'error',
-      '@typescript-eslint/prefer-string-starts-ends-with': 'error',
       'default-param-last': 'off',
       '@typescript-eslint/default-param-last': 'error',
       '@typescript-eslint/method-signature-style': ['error', 'property'],
       'dot-notation': 'off',
       '@typescript-eslint/no-require-imports': 'error',
-      '@typescript-eslint/no-unsafe-unary-minus': 'error',
       '@typescript-eslint/no-useless-empty-export': 'error',
-      '@typescript-eslint/dot-notation': 'error',
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/no-import-type-side-effects': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
-      '@typescript-eslint/consistent-type-exports': 'error',
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/ban-ts-comment': [
