@@ -1,5 +1,12 @@
 # @utima/eslint-config
 
+## 0.13.0
+
+### Minor Changes
+
+- [#2](https://github.com/utima-solutions/eslint-config/pull/2) [`46b4bbf`](https://github.com/utima-solutions/eslint-config/commit/46b4bbf65386a1e96834d5f946e0debff73394a0) Thanks [@jsimck](https://github.com/jsimck)! - Removed type-checked rules from default TS config, you can use typescriptTypeChecked optional configuration to enable these rules.
+  Added missing `unicorn` plugin to default config.
+
 ## 0.12.0
 
 ### Minor Changes
