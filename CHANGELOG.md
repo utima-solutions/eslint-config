@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.13.1
+
+### Patch Changes
+
+- [`3923ff9`](https://github.com/utima-solutions/eslint-config/commit/3923ff932d7e7a6896b161eb9f3c2a5338db3d57) Thanks [@jsimck](https://github.com/jsimck)! - Added `storybook-static` to default eslint ignore
+
 ## 0.13.0
 
 ### Minor Changes
