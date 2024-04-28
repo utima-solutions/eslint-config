@@ -13,6 +13,7 @@ export default [
       '**/dist/**',
       '**/build/**',
       '**/docs/**',
+      '**/storybook-static/**',
       '**/.docusaurus/**',
       '**/coverage/**',
     ],
