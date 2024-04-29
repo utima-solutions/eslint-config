@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.13.2
+
+### Patch Changes
+
+- [`f4268a9`](https://github.com/utima-solutions/eslint-config/commit/f4268a9f3349c8ac124e4d0a74acc125c8e919c6) Thanks [@jsimck](https://github.com/jsimck)! - Updated removed no-if rule in plugin jest config
+
 ## 0.13.1
 
 ### Patch Changes
