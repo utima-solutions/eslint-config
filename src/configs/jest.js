@@ -28,7 +28,7 @@ export default [
         },
       ],
       'jest/no-duplicate-hooks': 'error',
-      'jest/no-if': 'warn',
+      'jest/no-conditional-in-test': 'warn',
       'jest/no-done-callback': 'warn',
       'jest/no-large-snapshots': ['warn', { maxSize: 100, inlineMaxSize: 20 }],
       'jest/no-mocks-import': 'off',
