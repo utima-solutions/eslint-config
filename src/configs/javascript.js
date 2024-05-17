@@ -8,6 +8,7 @@ export default [
     ...js.configs.recommended,
     rules: {
       ...js.configs.recommended.rules,
+      'no-return-await': 'error',
       'no-console': [
         'warn',
         {
