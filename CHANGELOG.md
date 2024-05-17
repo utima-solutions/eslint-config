@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.14.0
+
+### Minor Changes
+
+- [`14ad9bb`](https://github.com/utima-solutions/eslint-config/commit/14ad9bbb3f5ae84187f37f5edd4a7d6f71907d86) Thanks [@jsimck](https://github.com/jsimck)! - Added new `no-return-await` rule to default config
+
 ## 0.13.2
 
 ### Patch Changes
