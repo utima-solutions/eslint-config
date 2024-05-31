@@ -33,10 +33,7 @@ export default [
       //   },
       // ],
       'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
-      'react/default-props-match-prop-types': [
-        'error',
-        { allowRequiredDefaults: true },
-      ],
+      'react/default-props-match-prop-types': 'off',
       'react/display-name': ['off'],
       'react/function-component-definition': [
         'error',
@@ -61,25 +58,12 @@ export default [
       'react/no-unsafe': 'error',
       'react/no-unstable-nested-components': ['warn', { allowAsProps: true }],
       'react/no-unused-class-component-methods': 'warn',
-      'react/no-unused-prop-types': [
-        'error',
-        {
-          customValidators: [],
-          skipShapeProps: true,
-        },
-      ],
+      'react/no-unused-prop-types': 'off',
       'react/no-unused-state': 'error',
       'react/no-will-update-set-state': 'error',
       'react/prefer-es6-class': ['error', 'always'],
       'react/prefer-stateless-function': 'error',
-      'react/prop-types': [
-        'warn',
-        {
-          customValidators: [],
-          ignore: [],
-          skipUndeclared: false,
-        },
-      ],
+      'react/prop-types': 'off',
       'react/require-render-return': 'error',
       'react/no-unknown-property': 'warn',
       'react/self-closing-comp': 'error',
