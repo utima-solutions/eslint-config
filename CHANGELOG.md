@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.14.1
+
+### Patch Changes
+
+- [`d37bad0`](https://github.com/utima-solutions/eslint-config/commit/d37bad0dbc17886c406618d376486f22e52020b0) Thanks [@jsimck](https://github.com/jsimck)! - Disabled prop-types rules
+
 ## 0.14.0
 
 ### Minor Changes
