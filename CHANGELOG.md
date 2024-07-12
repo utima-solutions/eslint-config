@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.14.3
+
+### Patch Changes
+
+- [`4799ab9`](https://github.com/utima-solutions/eslint-config/commit/4799ab9c85d1a71c31966e3b03976e3a77958e1d) Thanks [@jsimck](https://github.com/jsimck)! - Fixed stylistic rules to be applied to TS too
+
 ## 0.14.2
 
 ### Patch Changes
