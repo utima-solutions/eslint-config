@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.14.2
+
+### Patch Changes
+
+- [`e8f5a91`](https://github.com/utima-solutions/eslint-config/commit/e8f5a91b46b4dad628dfcb2820805583496f7a43) Thanks [@jsimck](https://github.com/jsimck)! - Added enforced empty line between class members
+
 ## 0.14.1
 
 ### Patch Changes
