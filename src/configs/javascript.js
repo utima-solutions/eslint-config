@@ -28,6 +28,15 @@ export default [
         },
       ],
 
+      // Lines between class member methods
+      'lines-between-class-members': [
+        'error',
+        'always',
+        {
+          exceptAfterSingleLine: true,
+        },
+      ],
+
       // Line spacing
       'padding-line-between-statements': [
         'error',
