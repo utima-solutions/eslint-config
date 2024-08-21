@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.16.0
+
+### Minor Changes
+
+- [`0994b4a`](https://github.com/utima-solutions/eslint-config/commit/0994b4af14cb6cee7ca8f92dc9ab1e5e1d33e374) Thanks [@jsimck](https://github.com/jsimck)! - prefer: 'type-imports' in consistent-type-type-imports to prevent automiport mismatches
+
 ## 0.15.0
 
 ### Minor Changes
