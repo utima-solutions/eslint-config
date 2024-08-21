@@ -49,9 +49,9 @@ Check following table for all aviailable configs:
 |-------------------------|-------------------------------------------------------------------------------------------------------|----------------------------|
 | `base`                    | Base config, includes language settings, globals, parser options                                      | ✅                          |
 | `javascript`              | Extends eslint recommended settings with some custom overrides                                        | ✅                          |
-| `imprt`                   | `eslint-plugin-import`                                                                                | ✅                          |
+| `imprt`                   | `eslint-plugin-import-x`                                                                              | ✅                          |
 | `unusedImports`           | `eslint-plugin-unused-imports`                                                                        | ✅                          |
-| `unicorn`                 | `eslint-plugin-unicorn`                                                                        | ✅                          |
+| `unicorn`                 | `eslint-plugin-unicorn`                                                                               | ✅                          |
 | `jest`                    | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ✅                          |
 | `prettier`                | `plugin:prettier/recommended`                                                                         | ✅                          |
 | `react`                   | `eslint-plugin-react`, `eslint-plugin-react-hooks`                                                    | ✅                          |

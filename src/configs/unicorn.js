@@ -8,15 +8,7 @@ export default [
     ...unicorn.configs['flat/recommended'],
     rules: {
       ...unicorn.configs['flat/recommended'].rules,
-      'unicorn/filename-case': [
-        'warn',
-        {
-          cases: {
-            camelCase: true,
-            pascalCase: true,
-          },
-        },
-      ],
+      'unicorn/filename-case': 'off',
       'unicorn/no-array-callback-reference': 'off',
       'unicorn/no-array-for-each': 'off',
       'unicorn/no-array-reduce': 'off',

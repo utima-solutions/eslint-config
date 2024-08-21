@@ -10,7 +10,6 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        allowAutomaticSingleRunInference: true,
         jsDocParsingMode: 'none',
         jsxPragma: null,
       },
@@ -37,16 +36,6 @@ export default [
       '@typescript-eslint/ban-ts-comment': [
         'error',
         { 'ts-expect-error': 'allow-with-description' },
-      ],
-      '@typescript-eslint/ban-types': [
-        'error',
-        {
-          types: {
-            Function: false,
-            '{}': false,
-          },
-          extendDefaults: true,
-        },
       ],
       '@typescript-eslint/no-unused-vars': [
         'error',

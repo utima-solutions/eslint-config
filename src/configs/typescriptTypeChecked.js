@@ -6,16 +6,7 @@ export default [
   {
     files: files.ts,
     languageOptions: {
-      parserOptions: {
-        project: [
-          './tsconfig.eslint.json',
-          './tsconfig.json',
-          './apps/*/tsconfig.eslint.json',
-          './apps/*/tsconfig.json',
-          './packages/*/tsconfig.eslint.json',
-          './packages/*/tsconfig.json',
-        ],
-      },
+      parserOptions: { projectService: true },
     },
     rules: {
       ...tsEslint.configs.recommendedTypeChecked.rules,

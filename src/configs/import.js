@@ -1,34 +1,34 @@
-import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import-x';
 
 import { files } from '../utils/helpers.js';
 
 export default [
   {
     files: [...files.js, ...files.ts],
-    plugins: { import: importPlugin },
+    plugins: { 'import-x': importPlugin },
     settings: {
-      'import/parsers': {
+      'import-x/parsers': {
         espree: ['.js', '.cjs', '.mjs', '.jsx'],
       },
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: true,
         node: true,
       },
     },
     rules: {
       ...importPlugin.configs.recommended.rules,
-      'import/no-duplicates': ['error', { 'prefer-inline': true }],
-      'import/newline-after-import': ['error', { considerComments: false }],
-      'import/no-unresolved': [
+      'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
+      'import-x/newline-after-import': ['error', { considerComments: false }],
+      'import-x/no-unresolved': [
         'warn',
         {
           ignore: [
-            '^@\\/', // ignore @/* aliases
+            String.raw`^@/`, // ignore @/* aliases
             '@(docusaurus|theme)',
           ],
         },
       ],
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           groups: ['builtin', 'external', 'internal'],
