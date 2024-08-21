@@ -30,7 +30,10 @@ export default [
       '@typescript-eslint/no-useless-empty-export': 'error',
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/no-import-type-side-effects': 'error',
-      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports' },
+      ],
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/ban-ts-comment': [
