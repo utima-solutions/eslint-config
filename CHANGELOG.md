@@ -1,5 +1,15 @@
 # @utima/eslint-config
 
+## 0.15.0
+
+### Minor Changes
+
+- [`746679a`](https://github.com/utima-solutions/eslint-config/commit/746679a4d79958d69fbade958d00a28f8433b380) Thanks [@jsimck](https://github.com/jsimck)! - Updated plugin dependencies
+
+### Patch Changes
+
+- [`b477751`](https://github.com/utima-solutions/eslint-config/commit/b4777511d896a257664a4638c980181ff0156419) Thanks [@jsimck](https://github.com/jsimck)! - Fixed previous corrupted version
+
 ## 0.14.3
 
 ### Patch Changes
