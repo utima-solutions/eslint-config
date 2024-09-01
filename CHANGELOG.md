@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.17.1
+
+### Patch Changes
+
+- [`e8f7857`](https://github.com/utima-solutions/eslint-config/commit/e8f785733bd24d5b531bfc5895232f97feba4483) Thanks [@jsimck](https://github.com/jsimck)! - Fixed issue with missing CJS dist files
+
 ## 0.17.0
 
 ### Minor Changes
