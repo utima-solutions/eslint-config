@@ -35,6 +35,9 @@ jobs:
         shell: bash
         run: npm ci --ignore-scripts
 
+      - name: Build
+        run: npm run build
+
       - name: Lint
         run: npm run lint
 

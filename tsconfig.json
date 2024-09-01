@@ -31,4 +31,8 @@
     "useUnknownInCatchVariables": true,
     "noPropertyAccessFromIndexSignature": true,
   },
+  "include": [
+    "src/**/*",
+    "./dist/cjs/index.js"
+  ]
 }
