@@ -6,6 +6,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 export default {
   input: 'index.js',
   external: [/node_modules/],
+  treeshake: false,
   output: [
     {
       dir: 'dist/cjs',
