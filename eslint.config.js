@@ -1,3 +1,3 @@
-import utimaConfig from './index.js';
+const utimaConfig = require('./dist/cjs/index.js');
 
-export default [...utimaConfig];
+module.exports = [...utimaConfig];
