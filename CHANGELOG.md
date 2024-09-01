@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.17.0
+
+### Minor Changes
+
+- [#3](https://github.com/utima-solutions/eslint-config/pull/3) [`3939c22`](https://github.com/utima-solutions/eslint-config/commit/3939c22b5fdf30ca7ab5bffb42b6779f633c0eb0) Thanks [@jsimck](https://github.com/jsimck)! - Added CJS support
+
 ## 0.16.0
 
 ### Minor Changes
