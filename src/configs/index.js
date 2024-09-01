@@ -9,3 +9,5 @@ export { default as tailwind } from './tailwind.js';
 export { default as typescript } from './typescript.js';
 export { default as unusedImports } from './unusedImports.js';
 export { default as typescriptTypeChecked } from './typescriptTypeChecked.js';
+export { default as sonarjs } from './sonarjs.js';
+export { default as unicorn } from './unicorn.js';

@@ -4,7 +4,7 @@ import { files } from '../utils/helpers.js';
 
 export default [
   {
-    files: [...files.jsx],
+    files: [...files.js, ...files.ts],
     plugins: { tailwindcss },
     rules: {
       ...tailwindcss.configs.recommended.rules,
