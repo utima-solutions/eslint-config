@@ -11,21 +11,21 @@ on:
 jobs:
   ci:
     name: CI
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2204
     timeout-minutes: 10
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Setup Node.js 20
-        uses: actions/setup-node@v4
+        uses: useblacksmith/setup-node@v5
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
 
       - name: Cache dependencies
         id: cache
-        uses: actions/cache@v3
+        uses: useblacksmith/cache@v5
         with:
           path: ./node_modules
           key: modules-${{ hashFiles('package-lock.json') }}
