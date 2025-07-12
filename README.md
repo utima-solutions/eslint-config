@@ -50,12 +50,13 @@ Check following table for all aviailable configs:
 | `base`                    | Base config, includes language settings, globals, parser options                                      | ✅                          |
 | `javascript`              | Extends eslint recommended settings with some custom overrides                                        | ✅                          |
 | `imprt`                   | `eslint-plugin-import-x`                                                                              | ✅                          |
+| `sortClassMembers`        | `eslint-plugin-sort-class-members`                                                                    | ✅                          |
 | `unusedImports`           | `eslint-plugin-unused-imports`                                                                        | ✅                          |
 | `unicorn`                 | `eslint-plugin-unicorn`                                                                               | ✅                          |
-| `jest`                    | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ✅                          |
 | `prettier`                | `plugin:prettier/recommended`                                                                         | ✅                          |
 | `react`                   | `eslint-plugin-react`, `eslint-plugin-react-hooks`                                                    | ✅                          |
 | `typescript`              | `@typescript-eslint/eslint-plugin`                                                                    | ✅                          |
+| `jest`                    | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ❌                          |
 | `tailwind`                | `eslint-plugin-tailwindcss`                                                                           | ❌                          |
 | `typescriptTypeChecked`   | Enables type-checking and type-checked rules (**impacts performance**)                                | ❌                          |
 | `next`                    | `@next/eslint-plugin-next`                                                                            | ❌                          |
