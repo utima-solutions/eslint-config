@@ -11,3 +11,4 @@ export { default as unusedImports } from './unusedImports.js';
 export { default as typescriptTypeChecked } from './typescriptTypeChecked.js';
 export { default as sonarjs } from './sonarjs.js';
 export { default as unicorn } from './unicorn.js';
+export { default as sortClassMembers } from './sortClassMembers.js';
