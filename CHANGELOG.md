@@ -1,5 +1,18 @@
 # @utima/eslint-config
 
+## 0.18.0
+
+### Minor Changes
+
+- [`e9d55a2`](https://github.com/utima-solutions/eslint-config/commit/e9d55a2131c7423074170d7e39586c5d61ad6ae1) Thanks [@jsimck](https://github.com/jsimck)! - Jest is now optional, you can manually import it from the `configs` folder if you need it.
+
+  ```js
+  import baseConfig from "@utima/eslint-config";
+  import { jest } from "@utima/eslint-config/configs";
+
+  export default [...baseConfig, ...jest];
+  ```
+
 ## 0.17.1
 
 ### Patch Changes
