@@ -1,5 +1,11 @@
 # @utima/eslint-config
 
+## 0.19.0
+
+### Minor Changes
+
+- [`9a93667`](https://github.com/utima-solutions/eslint-config/commit/9a93667553d53e450b97bfab37976574ceadb3ea) Thanks [@jsimck](https://github.com/jsimck)! - Removed TailwindCSS config due to v4 incompatibility
+
 ## 0.18.0
 
 ### Minor Changes
