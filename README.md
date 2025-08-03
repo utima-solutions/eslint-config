@@ -1,5 +1,5 @@
 # @utima/eslint-config
-Utima's extensible shared eslint-config. Comes pre-configured with **Prettier**, opinionated rules for JavaScript, TypeScript projects including React, TailwindCSS, Next.JS, jest **eslint plugins** and more.
+Utima's extensible shared eslint-config. Comes pre-configured with **Prettier**, opinionated rules for JavaScript, TypeScript projects including React, Next.JS, jest **eslint plugins** and more.
 
 The config uses new [flat config](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-file-formats) format, which is supported by eslint 7.0.0 and above. This allows us to use `.mjs` extension and import other configs from npm packages.
 
@@ -34,13 +34,13 @@ Below is simple code snippet you can add to your package.json to run eslint:
 
 ## Configs
 
-Each config is a separate file, which can be imported and used in your config. For example, to use TailwindCSS config, you can do:
+Each config is a separate file, which can be imported and used in your config. For example, to use Next.JS config, you can do:
 
 ```js
 import baseConfig from '@utima/eslint-config';
-import { tailwind } from '@utima/eslint-config/configs';
+import { next } from '@utima/eslint-config/configs';
 
-export default [...baseConfig, ...tailwind];
+export default [...baseConfig, ...next];
 ```
 
 Check following table for all aviailable configs:
@@ -57,7 +57,6 @@ Check following table for all aviailable configs:
 | `react`                   | `eslint-plugin-react`, `eslint-plugin-react-hooks`                                                    | ✅                          |
 | `typescript`              | `@typescript-eslint/eslint-plugin`                                                                    | ✅                          |
 | `jest`                    | `eslint-plugin-jest`, `eslint-plugin-jest-formatting`                                                 | ❌                          |
-| `tailwind`                | `eslint-plugin-tailwindcss`                                                                           | ❌                          |
 | `typescriptTypeChecked`   | Enables type-checking and type-checked rules (**impacts performance**)                                | ❌                          |
 | `next`                    | `@next/eslint-plugin-next`                                                                            | ❌                          |
 

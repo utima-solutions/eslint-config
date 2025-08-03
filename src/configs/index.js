@@ -5,7 +5,6 @@ export { default as jest } from './jest.js';
 export { default as next } from './next.js';
 export { default as prettier } from './prettier.js';
 export { default as react } from './react.js';
-export { default as tailwind } from './tailwind.js';
 export { default as typescript } from './typescript.js';
 export { default as unusedImports } from './unusedImports.js';
 export { default as typescriptTypeChecked } from './typescriptTypeChecked.js';

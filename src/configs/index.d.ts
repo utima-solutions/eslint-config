@@ -4,7 +4,6 @@ export const jest: [];
 export const next: [];
 export const prettier: [];
 export const react: [];
-export const tailwind: [];
 export const typescript: [];
 export const unusedImports: [];
 export const typescriptTypeChecked: [];
